@@ -46,7 +46,7 @@ class RandomPolicy(Policy):
 
     def learn_on_batch(self, samples):
         """No learning."""
-        return {}
+        return {LEARNER_STATS_KEY: {}}
 
 
 if __name__ == "__main__":
